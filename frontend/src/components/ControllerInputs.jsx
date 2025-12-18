@@ -1,4 +1,6 @@
-function ControllerInputs({ icon: Icon, onPress, className = '' }) {
+function ControllerInputs(props) {
+  const { icon: Icon, onPress, className = '' } = props
+
   return (
     <button
       onMouseDown={onPress}

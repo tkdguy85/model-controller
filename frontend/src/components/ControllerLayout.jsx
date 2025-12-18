@@ -1,4 +1,4 @@
-import { ArrowUp, ArrowDown, RotateCw, RotateCcw } from 'lucide-react';
+import { ArrowUp, ArrowDown, ChevronsUp, ChevronsDown, RotateCw, RotateCcw } from 'lucide-react';
 import ControllerInputs from './ControllerInputs';
 
 function ControllerLayout({ onControl }) {
@@ -26,11 +26,11 @@ function ControllerLayout({ onControl }) {
         <div className="text-sm text-slate-400 mb-2">Pitch</div>
         <div className="flex justify-center gap-2">
           <ControllerInputs
-            icon={ArrowUp} 
+            icon={ChevronsUp} 
             onPress={() => onControl('pitch-forward')}
           />
           <ControllerInputs
-            icon={ArrowDown} 
+            icon={ChevronsDown} 
             onPress={() => onControl('pitch-backward')}
           />
         </div>
