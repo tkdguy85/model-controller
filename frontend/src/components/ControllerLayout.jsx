@@ -3,13 +3,13 @@ import ControllerInputs from './ControllerInputs';
 
 function ControllerLayout({ onControl }) {
   return (
-    <div className="bg-slate-800 rounded-xl p-6 border border-slate-700">
-      <h2 className="text-xl font-semibold text-white mb-4">Controls</h2>
+    <div className="controller-layout-container">
+      <h2 className="controller-layout-header">Controls</h2>
       
       {/* Vertical Controls (Thrust) */}
-      <div className="mb-6">
-        <div className="text-sm text-slate-400 mb-2">Vertical</div>
-        <div className="flex flex-col items-center gap-2">
+      <div className="controller-layout-section">
+        <div className="controller-layout-label">Vertical</div>
+        <div className="controller-layout-inputs">
           <ControllerInputs
             icon={ArrowUp} 
             onPress={() => onControl('thrust-up')}
@@ -22,9 +22,9 @@ function ControllerLayout({ onControl }) {
       </div>
 
       {/* Horizontal Controls (Pitch) */}
-      <div className="mb-6">
-        <div className="text-sm text-slate-400 mb-2">Pitch</div>
-        <div className="flex justify-center gap-2">
+      <div className="controller-layout-section">
+        <div className="controller-layout-label">Pitch</div>
+        <div className="controller-layout-inputs">
           <ControllerInputs
             icon={ChevronsUp} 
             onPress={() => onControl('pitch-forward')}
@@ -37,9 +37,9 @@ function ControllerLayout({ onControl }) {
       </div>
 
       {/* Rotation Controls (Yaw) */}
-      <div>
-        <div className="text-sm text-slate-400 mb-2">Yaw (Rotation)</div>
-        <div className="flex justify-center gap-2">
+      <div className="controller-layout-section">
+        <div className="controller-layout-label">Yaw (Rotation)</div>
+        <div className="controller-layout-inputs">
           <ControllerInputs
             icon={RotateCcw} 
             onPress={() => onControl('yaw-left')}

@@ -1,10 +1,10 @@
 function ControllerInputs(props) {
-  const { icon: Icon, onPress, className = '' } = props
+  const { icon: Icon, onPress} = props
 
   return (
     <button
       onMouseDown={onPress}
-      className={`flex items-center justify-center p-4 rounded-lg bg-blue-600 hover:bg-blue-700 active:bg-blue-800 text-white transition-colors ${className}`}
+      className='controller-input-button'
     >
       <Icon size={24} />
     </button>
