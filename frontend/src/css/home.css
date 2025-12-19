@@ -1,0 +1,21 @@
+.home-container {
+  .home-header {
+    font-size: 2rem;
+    padding-bottom: 3rem;
+  }
+
+  .home-subheader {
+    font-size: 1.2rem;
+    margin-bottom: 1.5rem;
+  }
+
+  .model-list {
+    list-style-type: none;
+    padding: 0;
+    text-align: left;
+
+    .model-list-item {
+      margin-bottom: 0.5rem;
+    }
+  }
+}

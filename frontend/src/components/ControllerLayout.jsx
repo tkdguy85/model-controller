@@ -1,6 +1,6 @@
 import '../css/controller-layout.css'
 
-import { ArrowUp, ArrowDown, ChevronsUp, ChevronsDown, RotateCw, RotateCcw } from 'lucide-react';
+import { PlaneTakeoff, PlaneLanding, ChevronsUp, ChevronsDown, RotateCw, RotateCcw, Plane } from 'lucide-react';
 import ControllerInputs from './ControllerInputs';
 
 function ControllerLayout({ onControl }) {
@@ -13,11 +13,11 @@ function ControllerLayout({ onControl }) {
         <div className="controller-layout-label">Vertical</div>
         <div className="controller-layout-inputs">
           <ControllerInputs
-            icon={ArrowUp} 
+            icon={PlaneTakeoff} 
             onPress={() => onControl('thrust-up')}
           />
           <ControllerInputs
-            icon={ArrowDown} 
+            icon={PlaneLanding} 
             onPress={() => onControl('thrust-down')}
           />
         </div>
