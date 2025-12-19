@@ -15,7 +15,11 @@
     text-align: left;
 
     .model-list-item {
-      margin-bottom: 0.5rem;
+      margin-bottom: 2rem;
+    }
+
+    .model-button {
+      min-width: 500px;
     }
   }
 }
