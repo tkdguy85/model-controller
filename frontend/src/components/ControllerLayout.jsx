@@ -1,3 +1,5 @@
+import '../css/controller-layout.css'
+
 import { ArrowUp, ArrowDown, ChevronsUp, ChevronsDown, RotateCw, RotateCcw } from 'lucide-react';
 import ControllerInputs from './ControllerInputs';
 

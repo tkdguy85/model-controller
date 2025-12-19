@@ -1,3 +1,5 @@
+import '../css/activity-log.css'
+
 function ActivityLog({ logs }) {
   return (
     <div className="activity-container">

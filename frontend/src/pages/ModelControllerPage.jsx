@@ -2,6 +2,7 @@ import { useState, useEffect } from 'react'
 import TelemetryData from '../components/TelemetryData'
 import ActivityLog from '../components/ActivityLog'
 import ControllerLayout from '../components/ControllerLayout'
+import '../css/model-controller.css'
 
 function ModelControllerPage() {
   const [telemetry, setTelemetry] = useState({

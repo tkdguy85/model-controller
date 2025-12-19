@@ -1,3 +1,5 @@
+import '../css/controller-inputs.css'
+
 function ControllerInputs(props) {
   const { icon: Icon, onPress} = props
 
