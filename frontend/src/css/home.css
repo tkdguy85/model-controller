@@ -6,20 +6,64 @@
 
   .home-subheader {
     font-size: 1.2rem;
-    margin-bottom: 1.5rem;
+    margin-bottom: 2rem;
+  }
+  
+  .modal-button {
+    width: 75%;
+    padding: 1rem 2rem;
+    margin-bottom: 2rem;
+    background-color: blueviolet;
+    text-align: center;
+  }
+}
+
+/* Home Page Modal Styling */
+
+.modal-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 800px;
+
+  .modal-close-button {
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    font-size: 1rem;
+    cursor: pointer;
+    background-color: crimson;
   }
 
+  .model-list-header {
+    margin-bottom: 3rem;
+  }
+  
   .model-list {
     list-style-type: none;
     padding: 0;
-    text-align: left;
+    width: max-content;
+    display: block;
 
     .model-list-item {
-      margin-bottom: 2rem;
+      padding-bottom: 3rem;
+      width: 100%;
     }
 
     .model-button {
-      min-width: 500px;
+      width: 100%;
+      padding: 1rem 2rem;
+      background-color: blueviolet;
+      text-align: center;
+    }
+    .model-button.active {
+      background-color: #dc2626; /* red-600 */
+      color: #ffffff;
+    }
+
+    .model-button.active:hover {
+      background-color: #b91c1c; /* red-700 */
     }
   }
 }
