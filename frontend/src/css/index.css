@@ -13,6 +13,8 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
+/* TODO - Set up CSS color variables */
+
 a {
   font-weight: 500;
   color: #646cff;
