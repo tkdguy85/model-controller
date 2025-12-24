@@ -6,7 +6,7 @@ function Nav() {
     <nav>
       <div className="nav-container">
         <Link className="nav-link" to="/">Home</Link>
-        <Link className="nav-link" to="/model-controller/controls">Controller Panel</Link>
+        <Link className="nav-link" to="/controls">Controller Panel</Link>
       </div>
     </nav>
   )
