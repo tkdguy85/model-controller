@@ -6,11 +6,11 @@ function TelemetryData({ telemetry, windData }) {
       <h2 className="text-xl font-semibold text-white mb-4">Telemetry</h2>
       <div className="space-y-4">
         <div>
-          <div className="text-sm text-slate-400">Altitude</div>
+          <div className="text-sm text-slate-400">Current Altitude</div>
           <div className="text-3xl font-bold text-green-400">{telemetry.altitude.toFixed(0)} ft</div>
         </div>
         <div>
-          <div className="text-sm text-slate-400">Pitch</div>
+          <div className="text-sm text-slate-400">Relational Pitch</div>
           <div className="text-2xl font-bold text-blue-400">{telemetry.pitch.toFixed(0)}°</div>
           <div className="w-full bg-slate-700 h-2 rounded-full mt-2">
             <div 
@@ -20,11 +20,11 @@ function TelemetryData({ telemetry, windData }) {
           </div>
         </div>
         <div>
-          <div className="text-sm text-slate-400">Yaw</div>
+          <div className="text-sm text-slate-400">Relational Yaw</div>
           <div className="text-2xl font-bold text-purple-400">{telemetry.yaw}°</div>
         </div>
         <div>
-          <div className="text-sm text-slate-400">Thrust</div>
+          <div className="text-sm text-slate-400">Gas Thrust Impulse</div>
           <div className="text-2xl font-bold text-orange-400">{telemetry.thrust}%</div>
           <div className="w-full bg-slate-700 h-2 rounded-full mt-2">
             <div 
