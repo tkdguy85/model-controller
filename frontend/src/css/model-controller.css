@@ -1,1 +1,4 @@
 /* TODO - Setup up generic button styling and then update to match design */
+.model-controller-content {
+  border: solid 1px #fff;
+}

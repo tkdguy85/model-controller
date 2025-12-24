@@ -8,7 +8,7 @@ function ControllerInputs(props) {
       onMouseDown={onPress}
       className='controller-input-button'
     >
-      <Icon size={24} />
+      <Icon size={44} />
     </button>
   )
 }

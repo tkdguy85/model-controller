@@ -11,6 +11,14 @@
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+
+  --primary-bg: #0f1a20;
+  --primary-white: #f3fcf0;
+  --primary-alert: #f42c04;
+  --primary-yellow: #ffd23f;
+  --primary-emerald: #06d6a0;
+  --primary-pink: #b27092;
+  --primary-indigo: #540d62;
 }
 
 /* TODO - Set up CSS color variables */

@@ -1,1 +1,8 @@
 /* TODO - Setup up generic button styling and then update to match design */
+.controller-input-button {
+  color: var(--primary-emerald);
+  border: solid 1px var(--primary-white);
+  background-color: var(--primary-bg);
+  border-radius: 8px;
+  padding: 0.6em 1.2em;
+}
