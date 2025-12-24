@@ -54,15 +54,17 @@ function Home() {
                 'Model A - 2C (Africa)',
                 'Model A - 2D (Australia)'
               ].map(model => (
-                <li key={model} className="model-list-item">
-                  <button
-                    className={`model-button ${selectedModel === model ? 'active' : ''}`}
-                    onClick={() => handleModelSelect(model)}
-                    aria-pressed={selectedModel === model}
-                  >
-                    {model}
-                  </button>
-                </li>
+                <a href='/model-controller/controls'>
+                  <li key={model} className="model-list-item">
+                    <button
+                      className={`model-button ${selectedModel === model ? 'active' : ''}`}
+                      onClick={() => handleModelSelect(model)}
+                      aria-pressed={selectedModel === model}
+                    >
+                      {model}
+                    </button>
+                  </li>
+                </a>
               ))
             }
           </ul>
