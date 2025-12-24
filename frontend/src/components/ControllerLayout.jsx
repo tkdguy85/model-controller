@@ -6,18 +6,18 @@ import ControllerInputs from './ControllerInputs';
 function ControllerLayout({ onControl }) {
   return (
     <div className="controller-layout-container">
-      <h2 className="controller-layout-header">Controls</h2>
+      <h2 className="controller-layout-header">Flight Controls</h2>
       
       {/* Vertical Controls (Thrust) */}
       <div className="controller-layout-section">
-        <div className="controller-layout-label">Vertical</div>
+        <div className="controller-layout-label">Altitude Adjust</div>
         <div className="controller-layout-inputs">
           <ControllerInputs
-            icon={PlaneTakeoff} 
+            icon={ChevronsUp} 
             onPress={() => onControl('thrust-up')}
           />
           <ControllerInputs
-            icon={PlaneLanding} 
+            icon={ChevronsDown} 
             onPress={() => onControl('thrust-down')}
           />
         </div>
@@ -25,14 +25,14 @@ function ControllerLayout({ onControl }) {
 
       {/* Horizontal Controls (Pitch) */}
       <div className="controller-layout-section">
-        <div className="controller-layout-label">Pitch</div>
+        <div className="controller-layout-label">Pitch Position</div>
         <div className="controller-layout-inputs">
           <ControllerInputs
-            icon={ChevronsUp} 
+            icon={PlaneTakeoff} 
             onPress={() => onControl('pitch-forward')}
           />
           <ControllerInputs
-            icon={ChevronsDown} 
+            icon={PlaneLanding} 
             onPress={() => onControl('pitch-backward')}
           />
         </div>
@@ -40,7 +40,7 @@ function ControllerLayout({ onControl }) {
 
       {/* Rotation Controls (Yaw) */}
       <div className="controller-layout-section">
-        <div className="controller-layout-label">Yaw (Rotation)</div>
+        <div className="controller-layout-label">Sensor Yaw</div>
         <div className="controller-layout-inputs">
           <ControllerInputs
             icon={RotateCcw} 
